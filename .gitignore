@@ -1,0 +1,46 @@
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+*.project
+*.tern-project
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin 
+.target
+
+# TeXlipse plugin
+.texlipse
+
+# Bower modules
+bower_components/
+
+# other external modules
+vendors/
+
+# node modules
+node_modules/
+
+#documentation directories -- until I decide which way to go
+ngdocular/
+ngdocs/
+docs/
