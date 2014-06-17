@@ -128,7 +128,7 @@ app.put('/:db/:collection/:id', function(req, res) {
       db.collection(req.params.collection, function(err, collection) {
         collection.update(spec, req.body, true, function(err, docs) {
           res.header('Content-Type', 'application/json');
-          res.send('{"ok":1}');
+          res.send('{"_id": req.params.id, "ok":1}');
           db.close();
         });
       });
