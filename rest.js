@@ -66,7 +66,7 @@ app.get('/:db/:collection/:id?', function(req, res) {
           if (err) res.send(501,err.description);
           cursor.toArray(function(err, docs){
          	if (err) res.send(501,err.description);
-         	if (!docs) res.send(501,'looks like something went wrong.  Didn\'t get an error for the lookup, but nothing was returned')
+         	if (!docs) res.send(501,'looks like something went wrong.  Didn\'t get an error for the lookup, but nothing was returned');
             var result = [];          
             if(req.params.id) {
               if(docs.length > 0) {
@@ -128,7 +128,7 @@ app.put('/:db/:collection/:id', function(req, res) {
       db.collection(req.params.collection, function(err, collection) {
         collection.update(spec, req.body, true, function(err, docs) {
           res.header('Content-Type', 'application/json');
-          res.send('{"_id": req.params.id, "ok":1}');
+          res.send({"_id": req.params.id},200);
           db.close();
         });
       });
