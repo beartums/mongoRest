@@ -44,3 +44,6 @@ node_modules/
 ngdocular/
 ngdocs/
 docs/
+
+# Sublime files
+*.sublime-*
